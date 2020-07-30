@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Official ABK - Portfolio site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    
+<!--Animation on scroll library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
+   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<div id="loader">
+    <div class="dot dot1"></div>
+    <div class="dot dot2"></div>
+    <div class="dot dot3"></div>
+</div>
+
+<!--site header-->
+<header id="site-header">
+    <a href="index.html" class="site-logo">Official <span>ABK</span></a>
+    <nav id="nav-links">
+<!--
+        <ul class="desktop-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About me</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+-->
+        <div class="menu-toggle">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+        </div>
+    </nav>
+</header>
+
+<!--mobile menu-->
+<div class="responsive-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+           <li><a href="index.html">About me</a></li>
+           <li><a href="index.html">Portfolio</a></li>
+           <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+</div>
+   <div class="scroll">
+        <a href="#main-site"><div class="line line1"></div></a>
+        <a href="#about-sec"><div class="line line2"></div></a>
+        <a href="#project-sec"><div class="line line3"></div></a>
+    </div>
+<!--main site-->
+<main id="main-site">
+<section class="hero-section">
+    <img src="Images/hero-hd.jpg" class="hero-img" alt="">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Hello.</h1>
+        <p>I’m a  Web designer and developer from Manchester, UK. I create custom websites to help businesses do better online.</p>
+        <a href="#project-sec"><button>Portfolio</button></a>
+        <a href="contact.html"><button>Contact Me</button></a>
+    </div>
+</section>
+
+<div class="social-icons2">
+        <div class="social"><img src="Images/facebook.png" alt=""></div>
+        <div class="social"><a href="https://www.instagram.com/official.abk/" target="_blank"><img src="Images/instagram.png" alt="instagram"></a></div>
+        <div class="social"><img src="Images/github.png" alt=""></div>
+        <div class="social"> <a href="/contact.html"><img src="Images/mail.png" alt="email"></a></div>
+    </div>
+    
+<!--about-->
+<section id="about-sec" class="about-section" >
+   <h2 data-aos="fade-up"
+     data-aos-duration="1000">About</h2>
+    <div data-aos="fade-up"
+     data-aos-duration="1500" class="boxes">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div data-aos="fade-up"
+     data-aos-duration="3000" class="about-content">
+        <p>I’m a web developer and UI designer based in Manchester, UK. I build successful websites and web apps that are fast, easy to use, and coded with the same eye for detail as a designer. I have worked on a multitude of web based projects for a range of clients and for myself. I absolutely love what I do and take great pride in not only being able to complete the work to the high standard you expect but also go the extra mile whenever possible.
+I’m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease.
+</p>
+   <button>Download CV</button>
+    </div>
+
+</section>
+
+<!--project section-->
+
+<section id="project-sec" class="project-section">
+    <h2 data-aos="fade-up" data-aos-duration="2000">Projects</h2>
+    
+    <div class="project-container">
+       
+        <div class="filter-links" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+            <ul class="filter-ul">
+                <li class=""><a href="#">All</a></li>
+                <li><a href="#">Websites</a></li>
+                <li><a href="#">web-apps</a></li>
+                <li><a href="#">designs</a></li>
+            </ul>
+        </div>
+    
+<!--        <div class="projects-box" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">-->
+        <div class="projects-box">
+          
+          
+          
+           <div class="websites" data-img="Images/mockups/Nail-mockup.png">
+               <img src="Images/website-placeholders/Nail%20Lounge%20web%20page.png" alt="" >
+               <h4 data-title="The Nail Lounge Data abk" >Nail Salon Website</h4>
+               <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam.">Nail Salon website created for small business based in Wilmslow, Chesire</p>
+           </div>
+           <div class="web-apps" data-img="Images/website-placeholders/web2.png">
+                <img src="Images/website-placeholders/web2.png" alt="" >
+               <h4 data-title="jQuery Drawing App" >Jquery Drawing App</h4>
+               <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam.">HEy this is a paragraph</p>
+           </div>
+           <div class="designs" data-img="Images/website-placeholders/web3.png"> <img src="Images/website-placeholders/web3.png" alt="" >
+               <h4 data-title="jQuery Drawing App"    >Adobe XD design 1</h4>
+               <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam.">HEy this is a paragraph</p></div>
+           <div class="web-apps" data-img="Images/website-placeholders/web4.png">
+               <img src="Images/website-placeholders/web4.png" alt="" >
+               <h4 data-title="jQuery Drawing App"    >Maths website and Quiz</h4>
+               <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam.">HEy this is a paragraph</p></div>
+               
+           <div class="web-apps" data-img="Images/website-placeholders/web5.png"> <img src="Images/website-placeholders/web5.png" alt="" >
+               <h4 data-title="jQuery Drawing App"    >Ninja Game</h4>
+               <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam.">HEy this is a paragraph</p>
+               </div>
+               
+            <div class="websites" data-img="Images/website-placeholders/web1.png"> <img src="Images/website-placeholders/web1.png" alt="">
+               <h4 data-title="jQuery Drawing App"    >Custom wordpress Theme development</h4>
+               <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam.">HEy this is a paragraph</p>
+               </div>
+               
+            <div class="websites" data-img="Images/website-placeholders/web4.png">
+                   <img src="Images/website-placeholders/web4.png" alt="" >
+                   <h4 data-title="jQuery Drawing App"    >An Ecommerce website</h4>
+                   <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam.">HEy this is a paragraph</p>
+               </div>
+               
+            <div class="designs" data-img="Images/website-placeholders/web5.png">
+                   <img src="Images/website-placeholders/web5.png" alt="" >
+                   <h4 data-title="jQuery Drawing App"    >Adobe XD Design 2</h4>
+                   <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam.">HEy this is a paragraph</p></div>   
+               </div>
+    </div>
+
+         
+</section>
+<section class="project-holder">
+  
+   <h2>My <span>portfolio</span></h2>
+    
+    <h3>Websites</h3>
+    <div class="slider-holder">
+       <div class="slider">
+        <div class="box box1" data-img="Images/mockups/Nail-mockup.png"  >
+            <div class="box-image"></div>
+            <h4 data-title="The Nail Lounge Data">The Nail Lounge</h4>
+            <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam.">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, vel.</p>
+        </div>
+        <div class="box box2" data-img="Images/website-placeholders/web2.png">
+            <div class="box-image"></div>
+            <h4 data-title="The Nail Lounge Data"></h4>
+            <p data-text="lorem18"> hh</p>
+        </div>
+        <div class="box box3" data-img="Images/website-placeholders/web3.png">
+            <div class="box-image"></div>
+            <h4 data-title="The Nail Lounge Data"></h4>
+            <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam."></p>
+        </div>
+    </div>
+</div>
+
+<h3>Web-apps</h3>
+
+ <div class="slider-holder">
+   
+    <div class="slider">
+        <div class="box box4" data-img="Images/website-placeholders/web4.png" data-title="">
+            <div class="box-image"></div>
+            <h4 data-title="The Nail Lounge Data"></h4>
+            <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam."> </p>
+        </div>
+        <div class="box box5" data-img="Images/mockups/Nail-mockup.png">
+            <div class="box-image"></div>
+            <h4 data-title="The Nail Lounge Data"></h4>
+            <p data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta inventore dolores quas et laboriosam expedita ratione repellat maiores iusto veritatis veniam, animi id ipsam nobis."> </p>
+        </div>
+        <div class="box box6" data-img="Images/mockups/Nail-mockup.png">
+            <div class="box-image"></div>
+            <h4 data-title="T Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo commodi, soluta itaque quod."></h4><p data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta inventore dolores quas et laboriosam expedita ratione repellat maiores iusto veritatis veniam, animi id ipsam nobis."> </p>
+        </div>
+    </div>
+    
+</div>
+
+<h3>Prototypes</h3>
+ <div class="slider-holder">
+   
+    <div class="slider">
+        <div class="box box7" data-img="Images/mockups/Nail-mockup.png">
+            <div class="box-image"></div>
+            <h4 data-title="The Nail Lounge Data"></h4>
+            <p data-text="This is some data-text from paragrpaph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, laboriosam."> .</p>
+        </div>
+          <div class="box box8"data-img="Images/mockups/Nail-mockup.png">
+            <div class="box-image"></div>
+            <h4 data-title="The Nail Lounge Data"></h4>
+            <p data-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit corporis doloremque quaerat laudantium deleniti, sed."> </p>
+        </div>
+    </div>
+    
+</div>
+</section>
+<div class="modal">
+            <div class="modal-box">
+                <div class="modal-img">
+                               <a href="/contact.html">//</a>
+
+                    <img src="Images/hero.jpg" alt="" >
+                </div>
+                <ul>
+                    <li><img src="Images/html5.png" alt="html"></li>
+                    <li><img src="Images/css-5.png" alt="html"></li>
+                    <li><img src="Images/javascript.png" alt="html"></li>
+                </ul>
+                <div class="modal-textbox">
+                    <h4>Website title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti amet deleniti eligendi ipsam! In ipsa ipsum, possimus, autem voluptatibus aperiam accusantium sit sequi magnam odio.</p>
+                </div>
+            </div>
+            
+            <div class="modal-btn">
+                <button>Source code</button>
+                <button>View demo</button>
+            </div>
+</div>
+
+</main>
+<!--site footer-->
+<footer id="site-footer">
+    
+</footer>
+<script>AOS.init();</script>
+<script src="main.js"></script>
+
+</body>
+</html>
