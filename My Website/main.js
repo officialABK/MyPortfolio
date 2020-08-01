@@ -130,12 +130,13 @@ function animate(item) {
 //modal javascript
 let modal = document.querySelector(".modal");
 let modalBox = document.querySelector(".modal-box");
+
 let box = document.querySelectorAll(".box");
 let pDiv = document.querySelectorAll(".projects-box div");
 let original= document.querySelector(".modal-img img");
 let originalh4= document.querySelector(".modal-textbox h4");
 let originalp= document.querySelector(".modal-textbox p");
-
+let closeBtn = document.querySelector(".modal-close");
 
 
     pDiv.forEach((preview) =>{
@@ -176,4 +177,10 @@ modal.addEventListener("click", function(e){
         original.src = `${originalSrc}`;
         
     });
+})
+
+closeBtn.addEventListener("click", function(){
+     modal.classList.remove("open");
+        modalBox.classList.remove("open");
+    console.log(modal);
 })
